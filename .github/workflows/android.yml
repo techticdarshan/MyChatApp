@@ -1,24 +1,23 @@
-name: Build And Deploy App To Firebase Distribution
+ame: Build & upload to Firebase App Distribution
 
-on:
-  push:
-    branches: [master]
+on: [push]
+
 jobs:
   build:
     runs-on: ubuntu-latest
+
     steps:
-      - uses: actions/checkout@v3
-      - name: set up JDK 11
-        uses: actions/setup-java@v3
+      - uses: actions/checkout@v1
+      - name: set up JDK 1.8
+        uses: actions/setup-java@v1
         with:
-          java-version: '11'
-          distribution: 'temurin'
+          java-version: 1.8
       - name: build debug
         run: ./gradlew assembleDebug
-      - name: Upload artifact to Firebase App Distribution
-        uses: wzieba/Firebase-Distribution-Github-Action@v1
+      - name: upload artifact to Firebase App Distribution
+        uses: wzieba/Firebase-Distribution-Github-Action@v1.2.1
         with:
           appId: ${{secrets.FIREBASE_APP_ID}}
           token: ${{secrets.FIREBASE_TOKEN}}
-          groups: test-team
+          groups: Debug
           file: app/build/outputs/apk/debug/app-debug.apk
