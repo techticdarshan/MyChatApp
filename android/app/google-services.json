@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "1081755349842",
+    "project_id": "chatapp-37ba6",
+    "storage_bucket": "chatapp-37ba6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1081755349842:android:fe9472ef048009cef4c08b",
+        "android_client_info": {
+          "package_name": "com.mychatapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1081755349842-6e3iho9bbeiv761i6lrmfh7otv37sn9p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCbkskeWwMvfLBSE0uLl3sgbRNQC5jaSl4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1081755349842-6e3iho9bbeiv761i6lrmfh7otv37sn9p.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1081755349842-pq74c5ka47fcauopl75j3oqh53dudhje.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "org.reactjs.native.example.RnHooks"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
