@@ -12,10 +12,6 @@ jobs:
         uses: actions/setup-java@v3
         with:
           java-version: '11'
-          distribution: 'temurin'
-          cache: gradle
-      - name: Make gradlew executable
-        run: chmod +x ./gradlew
       - name: build debug
         run: ./gradlew assembleDebug
       - name: Upload artifact to Firebase App Distribution
